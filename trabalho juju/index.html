@@ -1,0 +1,196 @@
+!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metix - Stream Movies & Series</title>
+    <meta name="description" content="Discover and stream the latest movies and series on Metix - your premium entertainment platform">
+    <meta name="author" content="Metix">
+    
+    <meta property="og:title" content="Metix - Stream Movies & Series">
+    <meta property="og:description" content="Discover and stream the latest movies and series on Metix - your premium entertainment platform">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <!-- Logo -->
+                <div class="logo">
+                    <h1>Metix</h1>
+                </div>
+                
+                <!-- Navigation -->
+                <nav class="nav">
+                    <a href="#" class="nav-link">Series</a>
+                    <a href="#" class="nav-link">Monthly</a>
+                    <a href="#" class="nav-link">Quarterly</a>
+                    <a href="#" class="nav-link">Series</a>
+                </nav>
+                
+                <!-- Search -->
+                <div class="search-section">
+                    <div class="search-wrapper">
+                        <input type="text" placeholder="Search..." class="search-input" id="searchInput">
+                        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="21 21l-4.35-4.35"></path>
+                        </svg>
+                    </div>
+                    <button class="btn btn-primary">Search</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-layout">
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-bg">
+                    <img src="assets/hero-character.jpg" alt="Hero Character" class="hero-image">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-gradient"></div>
+                </div>
+                
+                <div class="hero-content">
+                    <div class="container">
+                        <div class="hero-text">
+                            <h1 class="hero-title">
+                                Hellp'a showse
+                                <br>
+                                <span class="hero-title-accent">Diamia Schewides</span>
+                            </h1>
+                            
+                            <p class="hero-description">
+                                Sunt dart sunt sviot had on will ders sow Ave gon al Work
+                                aconed sering alarmhe and henofted by tiphting letaour
+                                hefactoral dagorlires
+                            </p>
+                            
+                            <div class="hero-buttons">
+                                <button class="btn btn-hero" onclick="playMovie()">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <polygon points="5,3 19,12 5,21"></polygon>
+                                    </svg>
+                                    Watch now
+                                </button>
+                                
+                                <button class="btn btn-hero-outline" onclick="addToFavorites()">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                    </svg>
+                                    Best
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-floating">+ ADancicag</div>
+            </section>
+            
+            <!-- Content Sections -->
+            <section class="content-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Sentswith of plurs</h2>
+                        <span class="section-subtitle">+ ADancicag</span>
+                    </div>
+                    
+                    <div class="movies-grid" id="moviesGrid1">
+                        <!-- Movies will be populated by JavaScript -->
+                    </div>
+                </div>
+            </section>
+            
+            <section class="content-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>New releases</h2>
+                    </div>
+                    
+                    <div class="movies-grid" id="moviesGrid2">
+                        <!-- Movies will be populated by JavaScript -->
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <div class="sidebar-header">
+                    <h3>Action categories</h3>
+                    <span class="sidebar-count">8 Series</span>
+                </div>
+                
+                <div class="action-grid">
+                    <div class="action-card">
+                        <div class="action-content">DEATHITION</div>
+                        <div class="notification-badge new">!</div>
+                    </div>
+                    <div class="action-card">
+                        <div class="action-content">NIASADER</div>
+                        <div class="notification-badge count">3</div>
+                    </div>
+                    <div class="action-card">
+                        <div class="action-content">STRANGER THINGS</div>
+                    </div>
+                    <div class="action-card">
+                        <div class="action-content">DANIDER</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sidebar-section">
+                <div class="sidebar-header">
+                    <h3>Watch new</h3>
+                    <div class="notification-badge count">6</div>
+                </div>
+                
+                <div class="watch-list">
+                    <div class="watch-item">
+                        <div class="watch-thumb">Pin</div>
+                        <div class="watch-title">Pinigoogle</div>
+                    </div>
+                    <div class="watch-item">
+                        <div class="watch-thumb">Dre</div>
+                        <div class="watch-title">Drend spitadoss</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sidebar-section">
+                <div class="sidebar-header">
+                    <h3>New releases</h3>
+                    <span class="sidebar-count">133 • 74</span>
+                </div>
+                
+                <div class="release-card">
+                    <div class="release-content">
+                        <div class="release-thumb">GA</div>
+                        <div class="release-info">
+                            <h4>Genii by</h4>
+                            <p>Acessario</p>
+                        </div>
+                    </div>
+                    
+                    <div class="release-buttons">
+                        <button class="btn btn-small btn-primary">Sorvite</button>
+                        <button class="btn btn-small btn-outline">About</button>
+                        <button class="btn btn-small btn-outline">Traning</button>
+                        <button class="btn btn-small btn-outline">Xtrat</button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
