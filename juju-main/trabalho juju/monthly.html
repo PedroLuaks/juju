@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano Mensal - Metix</title>
+    <meta name="description" content="Assine o plano mensal do Metix e tenha acesso ilimitado">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <!-- Logo -->
+                <div class="logo">
+                    <h1>Metix</h1>
+                </div>
+                
+                <!-- Navigation -->
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Início</a>
+                    <a href="series.html" class="nav-link">Séries</a>
+                    <a href="monthly.html" class="nav-link active">Mensal</a>
+                    <a href="quarterly.html" class="nav-link">Trimestral</a>
+                </nav>
+                
+                <!-- Search -->
+                <div class="search-section">
+                    <div class="search-wrapper">
+                        <input type="text" placeholder="Pesquisar..." class="search-input" id="searchInput">
+                        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="21 21l-4.35-4.35"></path>
+                        </svg>
+                    </div>
+                    <button class="btn btn-primary">Buscar</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-layout">
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-bg">
+                    <img src="assets/hero-character.jpg" alt="Plano Mensal" class="hero-image">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-gradient"></div>
+                </div>
+                
+                <div class="hero-content">
+                    <div class="container">
+                        <div class="hero-text">
+                            <h1 class="hero-title">
+                                Plano Mensal
+                                <br>
+                                <span class="hero-title-accent">Flexibilidade Total</span>
+                            </h1>
+                            
+                            <p class="hero-description">
+                                Acesso ilimitado por apenas R$ 19,90/mês. Cancele quando
+                                quiser, sem taxas ou multas. Perfeito para quem quer
+                                experimentar ou tem flexibilidade.
+                            </p>
+                            
+                            <div class="hero-buttons">
+                                <button class="btn btn-hero" onclick="subscribe('monthly')">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    Assinar Agora
+                                </button>
+                                
+                                <button class="btn btn-hero-outline" onclick="showFeatures()">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                        <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"></path>
+                                    </svg>
+                                    Ver Benefícios
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-floating">R$ 19,90</div>
+            </section>
+            
+            <!-- Pricing Section -->
+            <section class="content-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Por que escolher o Plano Mensal?</h2>
+                        <span class="section-subtitle">+ Vantagens</span>
+                    </div>
+                    
+                    <div class="pricing-grid">
+                        <div class="pricing-card featured">
+                            <div class="pricing-header">
+                                <h3>Plano Mensal</h3>
+                                <div class="price">
+                                    <span class="currency">R$</span>
+                                    <span class="amount">19,90</span>
+                                    <span class="period">/mês</span>
+                                </div>
+                            </div>
+                            
+                            <div class="pricing-features">
+                                <div class="feature">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="check-icon">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    <span>Acesso ilimitado ao catálogo completo</span>
+                                </div>
+                                
+                                <div class="feature">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="check-icon">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    <span>Qualidade 4K Ultra HD</span>
+                                </div>
+                                
+                                <div class="feature">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="check-icon">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    <span>Até 4 telas simultâneas</span>
+                                </div>
+                                
+                                <div class="feature">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="check-icon">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    <span>Downloads para assistir offline</span>
+                                </div>
+                                
+                                <div class="feature">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="check-icon">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    <span>Sem anúncios</span>
+                                </div>
+                                
+                                <div class="feature">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="check-icon">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    <span>Cancele quando quiser</span>
+                                </div>
+                            </div>
+                            
+                            <button class="btn btn-primary pricing-btn" onclick="subscribe('monthly')">
+                                Começar Agora
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-methods">
+                        <h3>Formas de Pagamento Aceitas</h3>
+                        <div class="payment-icons">
+                            <div class="payment-icon">Cartão de Crédito</div>
+                            <div class="payment-icon">PIX</div>
+                            <div class="payment-icon">Boleto</div>
+                            <div class="payment-icon">PayPal</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- FAQ Section -->
+            <section class="content-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Perguntas Frequentes</h2>
+                    </div>
+                    
+                    <div class="faq-grid">
+                        <div class="faq-item">
+                            <h4>Posso cancelar a qualquer momento?</h4>
+                            <p>Sim! Não há fidelidade. Você pode cancelar sua assinatura a qualquer momento através do seu perfil.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h4>Quantas pessoas podem usar a conta?</h4>
+                            <p>Você pode assistir em até 4 dispositivos simultaneamente e criar perfis para toda a família.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h4>Há período de teste grátis?</h4>
+                            <p>Sim! Oferecemos 7 dias grátis para você conhecer todo o nosso catálogo.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h4>O que acontece se eu esquecer de pagar?</h4>
+                            <p>Sua conta fica suspensa, mas seus dados são mantidos por 30 dias para você reativar quando quiser.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <div class="sidebar-header">
+                    <h3>Compare Planos</h3>
+                </div>
+                
+                <div class="plan-comparison">
+                    <div class="plan-item current">
+                        <h4>Mensal</h4>
+                        <div class="plan-price">R$ 19,90</div>
+                        <p>Flexibilidade total</p>
+                    </div>
+                    
+                    <div class="plan-item">
+                        <h4>Trimestral</h4>
+                        <div class="plan-price">R$ 49,90</div>
+                        <p>Economia de 16%</p>
+                        <a href="quarterly.html" class="btn btn-small btn-outline">Ver Plano</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sidebar-section">
+                <div class="sidebar-header">
+                    <h3>Garantia</h3>
+                </div>
+                
+                <div class="guarantee-card">
+                    <div class="guarantee-content">
+                        <h4>100% Satisfação</h4>
+                        <p>Se não ficar satisfeito nos primeiros 30 dias, devolvemos seu dinheiro.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sidebar-section">
+                <div class="sidebar-header">
+                    <h3>Suporte</h3>
+                </div>
+                
+                <div class="support-options">
+                    <div class="support-item">
+                        <strong>Chat 24/7</strong>
+                        <p>Atendimento online</p>
+                    </div>
+                    
+                    <div class="support-item">
+                        <strong>WhatsApp</strong>
+                        <p>(11) 9999-9999</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
