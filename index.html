@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metix - Filmes e Séries em Streaming</title>
+    <meta name="description" content="Descubra e assista os últimos filmes e séries no Metix - sua plataforma de entretenimento premium">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo"><h1>Metix</h1></div>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Início</a>
+                    <a href="filmes.html" class="nav-link">Filmes</a>
+                    <a href="sobre.html" class="nav-link">Sobre</a>
+                </nav>
+                <div class="cart-icon-wrapper" onclick="toggleCart()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="cart-count" id="cartCount">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+ 
+    <main class="main-content-full">
+       
+        <section class="hero">
+            <div class="hero-bg">
+                <img src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?q=80&w=2070&auto=format&fit=crop" alt="Cinema" class="hero-image">
+                <div class="hero-overlay"></div>
+                <div class="hero-gradient"></div>
+            </div>
+            <div class="hero-content">
+                <div class="container">
+                    <div class="hero-text">
+                        <h1 class="hero-title">A Melhor Experiência  
+<span class="hero-title-accent">em Streaming</span></h1>
+                        <p class="hero-description">Milhares de filmes, séries e documentários esperando por você.</p>
+                        <div class="hero-buttons">
+                            <a href="filmes.html" class="btn btn-hero">Ver Filmes</a>
+                            <a href="sobre.html" class="btn btn-hero-outline">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+      
+        <section class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Destaques da Semana</h2>
+                    <span class="section-subtitle">+ Populares</span>
+                </div>
+                
+                <div class="movies-grid" id="moviesGrid1">
+                   
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Carrinho de Compras</h3>
+            <button class="cart-close" onclick="toggleCart( )">×</button>
+        </div>
+        <div class="cart-items" id="cartItems"><p class="cart-empty">Seu carrinho está vazio</p></div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="cart-total-price" id="cartTotal">R$ 0,00</span>
+            </div>
+            <button class="btn btn-primary cart-checkout">Finalizar Compra</button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - Metix</title>
+    <meta name="description" content="Conheça a Metix - sua plataforma de streaming premium">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+              
+                <div class="logo">
+                    <h1>Metix</h1>
+                </div>
+                
+              
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Início</a>
+                    <a href="filmes.html" class="nav-link">Filmes</a>
+                    <a href="sobre.html" class="nav-link">Sobre</a>
+                </nav>
+                
+             
+                <div class="cart-icon-wrapper" onclick="toggleCart()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="cart-count" id="cartCount">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="main-content-full page-content">
+        <section class="content-section">
+            <div class="container">
+                <div class="page-header">
+                    <h1>Sobre o Metix</h1>
+                    <p>A melhor plataforma de streaming e vendas de filmes</p>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="about-icon">🎬</div>
+                        <h3>Catálogo Extenso</h3>
+                        <p>Mais de 10.000 títulos entre filmes, séries e documentários para você assistir quando quiser.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="about-icon">✨</div>
+                        <h3>Qualidade 4K</h3>
+                        <p>Imagem e som de altíssima qualidade para a melhor experiência de cinema em casa.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="about-icon">📱</div>
+                        <h3>Multiplataforma</h3>
+                        <p>Assista em qualquer dispositivo: TV, computador, tablet ou smartphone.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="about-icon">🚀</div>
+                        <h3>Lançamentos</h3>
+                        <p>Os últimos lançamentos do cinema disponíveis primeiro aqui no Metix.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="about-icon">💳</div>
+                        <h3>Pagamento Fácil</h3>
+                        <p>Várias opções de pagamento seguro para sua comodidade.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="about-icon">🎯</div>
+                        <h3>Recomendações</h3>
+                        <p>Sistema inteligente que sugere filmes baseado no seu gosto.</p>
+                    </div>
+                </div>
+                
+                <div class="about-story">
+                    <h2>Nossa História</h2>
+                    <p>O Metix nasceu em 2020 com a missão de revolucionar o entretenimento digital no Brasil. Começamos como uma pequena plataforma de streaming e hoje somos referência em qualidade e variedade de conteúdo.</p>
+                    
+                    <p>Com mais de 5 milhões de usuários satisfeitos, continuamos trabalhando para trazer a melhor experiência de entretenimento para sua casa. Nossa equipe está constantemente buscando novos títulos e melhorando nossa plataforma.</p>
+                    
+                    <p>Acreditamos que o cinema é para todos, e por isso oferecemos desde os grandes blockbusters até filmes independentes e documentários exclusivos.</p>
+                </div>
+                
+                <div class="contact-section">
+                    <h2>Entre em Contato</h2>
+                    <div class="contact-grid">
+                        <div class="contact-item">
+                            <h4>📧 Email</h4>
+                            <p>contato@metix.com.br</p>
+                        </div>
+                        <div class="contact-item">
+                            <h4>📞 Telefone</h4>
+                            <p>(11) 4000-0000</p>
+                        </div>
+                        <div class="contact-item">
+                            <h4>💬 WhatsApp</h4>
+                            <p>(11) 99999-9999</p>
+                        </div>
+                        <div class="contact-item">
+                            <h4>🕐 Horário</h4>
+                            <p>24/7 - Atendimento contínuo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+  
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Carrinho de Compras</h3>
+            <button class="cart-close" onclick="toggleCart()">×</button>
+        </div>
+        
+        <div class="cart-items" id="cartItems">
+            <p class="cart-empty">Seu carrinho está vazio</p>
+        </div>
+        
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="cart-total-price" id="cartTotal">R$ 0,00</span>
+            </div>
+            <button class="btn btn-primary cart-checkout">Finalizar Compra</button>
+        </div>
+    </div>
+    
+    <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
